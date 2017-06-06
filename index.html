@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>京东商城</title>
+<link rel="stylesheet" href="css/jingdong.css" />
+<link rel="stylesheet" href="css/jingdong2.css" />
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jingdongjs.js"></script>
+<!--<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		/*font-size: 12px;*/
+		background: ;
+	}
+	body{
+		background: #f6f6f6;
+	}
+	header{
+		width: 100%;
+		height: 30px;
+		background: #e3e4e5;
+		font-size: 12px;
+	}
+	#headerneirong{
+		margin: 0 auto;
+		width: 1190px;
+		height: 30px;
+		display: flex;
+		/*border: 1px solid red;*/
+		color: #999999;
+		align-items: center;
+	}
+	#btns1{
+		width: 615px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;	
+		/*border: 1px solid black;*/
+	}
+	nav{
+		width: 575px;
+		/*border: 1px solid black;*/
+	}
+	header ul{
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;		
+	}
+	header ul li{
+		text-align: center;
+		border-left: 1px solid #999999;
+		/*border: 1px solid black;*/		
+	}
+	header ul li:hover{
+		color: #c81623;
+	}
+	#btns1 div{
+		height: 30px;
+		/*border: 1px solid black;*/
+		text-align: center;
+		line-height: 30px;		
+	}
+	#btns1 div:nth-of-type(n+2){
+		margin-left: 10px;
+	}
+	#blank1{
+		width: 190px;
+	}
+	#city{
+		width: 55px;
+	}
+	#blank2{
+		width: 190px;
+	}
+	#denglu{		
+		width: 75px;		
+	}
+	#denglu:hover{
+		color: #c81623;
+	}
+	#zuce{
+		width: 65px;
+		color: #f10215;
+		/*color: #c81623;*/		
+	}
+	#zuce:hover{
+		color: #c81623;
+	}
+	
+	#face{
+		width: 1190px;
+		height: 650px;
+		margin: 0 auto;
+		margin-top: -30px;
+		position: relative;
+	}
+	#faceaside{
+		width: 190px;
+		height: 650px;
+		display: flex;
+		flex-flow: column;
+		font-size: 12px;
+		/*border: 1px solid black;*/
+		float: left;
+	}
+	#faceaside img{
+		/*border: 1px solid black;*/
+		box-shadow: -5px 0 5px #e0e0e0,5px 0 5px #e0e0e0;
+	}
+	#fenlei{
+		background: #6e6568;
+		/*border: 1px solid black;*/
+		
+	}
+	#fenlei ul{
+		margin: 15px 0;
+	}
+	#fenlei ul li{
+		list-style: none;
+		height: 30px;
+		color: white;
+		
+		padding-left: 12px;
+	}
+	#fenlei ul li span{
+		font-size: 15px
+		/*padding-right: 3px;*/
+
+	}
+	#fenlei ul li span:nth-of-type(n+2){
+		padding-left: 3px;
+	}
+	#fenlei ul li span{
+		padding-right: 3px;
+	}
+	
+	#sousuo{
+		position: absolute;
+		top: 30px;
+		margin-left: 200px;
+		margin-top: 25px;
+		width: 900px;
+		height: 115px;
+		/*border: 1px solid black;*/
+		display: flex;
+		flex-flow: column;
+	}
+	#sousuo div{
+		/*border: 1px solid black;*/
+	}
+	#ss1{
+		width: 900px;
+		height: 35px;
+		display: flex;
+	}
+	#blank3{
+		width: 130px;
+		height: 35px;
+	}
+	#ssk{
+		width: 550px;
+		height: 35px;
+		display: flex;
+	}
+	#ssk input{
+		border: solid 1px #f10215;
+	}
+	#kk1{
+		width: 500px;
+		border: solid 1px #f10215;
+	}
+	#kk2{
+		width: 50px;
+		background: #f10215;
+	}
+	#blank4{
+		width: 30px;
+		height: 35px;
+	}
+	#gouwulan{
+		width: 190px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		border: solid 1px #e3e4e5;
+		background: #ffffff;
+	}
+	#ss2{
+		width: 900px;
+		height: 32px;
+		margin-bottom: 8px;
+		display: flex;
+	}
+	#blank5{
+		width: 130px;
+		height: 32px;
+	}
+	#anshi{
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		color: #999999;
+	}
+	.tishi:nth-of-type(n+2){
+		margin-left: 10px;
+	}
+	
+	#ss3{
+		width: 900px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		color: #555555;
+		display: flex;
+		font-weight: 600;
+	}	
+	#dibu1{
+		width: 285px;
+		display: flex;
+		justify-content: space-around;
+	}
+	#dibu2{
+		width: 325px;
+		display: flex;
+		justify-content: space-around;
+	}
+	#dibu3{
+		width: 290px;
+	}
+	#dibu3 .dbspan{
+		margin-left: 20px;
+	}
+	
+	#erweima{
+		width: 67px;
+		height: 67px;
+		border: 1px solid #cfcfcf;
+		float: right;
+		margin-top: 30px;
+		margin-right: 10px;
+		background: url(img/二维码.gif);
+	}
+	
+	#bigimgs{
+		position: absolute;
+		margin-left: 200px;
+		top: 170px;
+		width: 790px;
+		height: 480px;
+		border: 1px solid #cfcfcf;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	#lunbotu{
+		width: 790px;
+		height: 340px;
+		border: 1px solid black;
+		margin-bottom: 10px;
+	}
+	#bigimg1{
+		width: 390px;
+		height: 130px;
+		border: 1px solid black;
+		margin-right: 8px;
+		background: url(img/左一.png);
+	}
+	#bigimg2{
+		width: 390px;
+		height: 130px;
+		border: 1px solid black;
+		background: url(img/右一.png);
+	}
+	
+	#faceaside2{
+		right: 0;
+		bottom: 0;
+		position: absolute;
+		width: 190px;
+		height: 480px;
+		/*border: 1px solid black;*/
+		display: flex;
+		flex-flow: column;
+		font-size: 12px;
+		color: #666;
+	}
+	#geren{
+		width: 190px;
+		height: 115px;
+		border-bottom: 1px solid #e6e6e6;
+	}
+	#xinxi{
+		width: 190px;
+		height: 155px;
+		/*border: 1px solid black;*/
+	}
+	#kuaijie{
+		width: 190px;
+		height: 210px;
+		/*border: 1px solid black;*/
+		display: flex;
+	}
+	
+	
+	/*#gerennei{		
+		width: 148px;
+		height: 85px;
+		border: 1px solid black;
+		margin: 15px 17px 15px 15px;
+	}*/
+	#gerentop{
+		width: 150px;
+		height: 50px;
+		/*border: 1px solid black;*/
+		/*margin-bottom: 10px;*/
+		margin: 15px 15px 10px 15px;
+		color: #666666;
+		position: relative;
+	}
+	#gerenbottom{
+		width: 158px;
+		height: 24px;
+		/*border: 1px solid black;*/
+		margin: 0px 17px 15px 15px;
+	}
+	
+	#touxiang{
+		width: 50px;
+		height: 50px;
+		/*border: 1px solid black;*/
+		float: left;
+		background: url(img/no_login.jpg);
+		background-size: 55px 55px;
+	}
+	#gerendl{
+		position: absolute;
+		top: 10px;
+		left: 48px;
+		margin: 10px 5px 0 7px;	
+	}
+	#gerenzc{
+		position: absolute;
+		top: 10px;
+		left: 75px;
+		margin: 10px 5px 0 7px;	
+	}
+	#gerentop p{
+		display: block;
+		position: absolute;
+		right: 0;
+	}
+	#gerenbottom div{
+		width: 74px;
+		height: 24px;
+		line-height: 20px;
+		border: 2px solid #e01222;
+		text-align: center;
+		color: #e01222;
+	}
+	#fuli{
+		float: left;
+	}
+	#huiyuan{		
+		float: right;
+	}
+	
+	#xinxitop{
+		width: 190px;
+		height: 27px;
+		/*border-bottom: 1px solid black;*/
+		display: flex;
+		border-bottom: 1px solid #e6e6e6;
+	}
+	#cxgg{
+		width: 104px;
+		height: 27px;
+
+	}
+	#cxgg ul{
+		width: 104px;
+		height: 27px;
+		display: flex;
+	}
+	#cxgg ul li{
+		display: inline-block;
+		list-style: none;
+		width: 54px;
+		height: 27px;
+		line-height: 27px;
+		/*border: 1px solid black;*/
+		text-align: center;
+	}
+	#cxgg ul li:first-child{
+		border-right: 1px solid #e6e6e6;
+	}
+	#gengduo{
+		width: 86px;
+		height: 27px;
+		line-height: 27px;
+		margin-left: 40px;
+	}
+	#xinxibottom{
+		width: 190px;
+		height: 128px;
+		border: 1px solid black;
+	}
+	#kjtable{
+		width: 190px;
+		height: 210px;
+		border-collapse: collapse;
+	}
+	#kjtable td{
+		border: 1px solid #e7e7e7;
+		text-align: center;
+	}
+	.td1{
+		width: 48px;
+		height: 70px;
+	}
+	.td2{
+		width: 46px;
+		height: 70px;
+	}
+	#denglu:hover{
+		color: red;
+	}
+</style>-->
+
+<script type="text/javascript">
+	
+</script>
+	</head>
+	<body>
+		<header>
+			<div id="headerneirong">
+				<div id="btns1">
+					<div id="blank1"></div>
+					<div id="city" class="shouzhi">城市</div>
+					<div id="blank2"></div>
+					<div id="denglu" class="hov shouzhi">你好，请登录</div>
+					<div id="zuce" class="hov shouzhi">免费注册</div>
+				</div>
+				<nav>
+					<ul>
+						<li style="width: 75px;" class="hov shouzhi">我的订单</li>
+						<li style="width: 90px;" class="hov  shouzhi">我的京东</li>
+						<li style="width: 75px;" class="hov  shouzhi">京东会员</li>
+						<li style="width: 75px;" class="hov  shouzhi">企业采购</li>
+						<li style="width: 90px;" id="fuwu">客户服务</li>
+						<li style="width: 90px;" id="daohang">网站导航</li>
+						<li style="width: 80px;">手机京东</li>
+					</ul>
+				</nav>	
+			</div>			
+		</header>
+		<div id="face">
+			<div id="citys">
+				<table id="citystable">
+					<tr>
+						<td><span class="facespan">北京</span></td>
+						<td><span class="facespan">上海</span></td>
+						<td><span class="facespan">天津</span></td>
+						<td><span class="facespan">重庆</span></td>
+						<td><span class="facespan">河北</span></td>
+					</tr>
+					<tr>
+						<td><span class="facespan">山西</span></td>
+						<td><span class="facespan">河南</span></td>
+						<td><span class="facespan">辽宁</span></td>
+						<td><span class="facespan">吉林</span></td>
+						<td><span class="facespan">黑龙江</span></td>
+					</tr>
+					<tr>
+						<td><span class="facespan">内蒙古</span></td>
+						<td><span class="facespan">江苏</span></td>
+						<td><span class="facespan">山东</span></td>
+						<td><span class="facespan">安徽</span></td>
+						<td><span class="facespan">浙江</span></td>
+					</tr>
+					<tr>
+						<td><span class="facespan">福建</span></td>
+						<td><span class="facespan">湖北</span></td>
+						<td><span class="facespan">湖南</span></td>
+						<td><span class="facespan">广东</span></td>
+						<td><span class="facespan">广西</span></td>
+					</tr>
+					<tr>
+						<td><span class="facespan">江西</span></td>
+						<td><span class="facespan">四川</span></td>
+						<td><span class="facespan">海南</span></td>
+						<td><span class="facespan">贵州</span></td>
+						<td><span class="facespan">云南</span></td>
+					</tr>
+					<tr>
+						<td><span class="facespan">西藏</span></td>
+						<td><span class="facespan">陕西</span></td>
+						<td><span class="facespan">甘肃</span></td>
+						<td><span class="facespan">青海</span></td>
+						<td><span class="facespan">宁夏</span></td>
+					</tr>
+					<tr>
+						<td><span class="facespan">新疆</span></td>
+						<td><span class="facespan">港澳</span></td>
+						<td><span class="facespan">台湾</span></td>
+						<td><span class="facespan">钓鱼岛</span></td>
+						<td><span class="facespan">海外</span></td>
+					</tr>
+				</table>
+			</div>
+			<div id="fuwus">
+				<div id="fuwu_1">
+					<table>
+						<tr>
+							<td><span class="fuwu_td">客户</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan">帮助中心</span></td>
+							<td><span class="facespan">售后服务</span></td>
+						</tr>						
+						<tr>
+							<td><span class="facespan">在线客服</span></td>
+							<td><span class="facespan">意见建议</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan">电话客服</span></td>
+							<td><span class="facespan">客服邮箱</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan">金融咨询</span></td>
+							<td><span class="facespan">售全球客服</span></td>
+						</tr>
+					</table>
+				</div>
+				<div id="fuwu_2">
+					<table>
+						<tr>
+							<td><span class="fuwu_td">商户</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan">合作招商</span></td>
+							<td><span class="facespan">京东商学院</span></td>
+						</tr>						
+						<tr>
+							<td><span class="facespan">商家后台</span></td>
+							<td><span class="facespan">京麦工作台</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan">商家帮助</span></td>
+							<td><span class="facespan">规则平台
+							</span></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="daohangs">
+				<div id="daohang1">
+					<table>
+						<tr>
+							<td><span class="daohang_td">特色主题</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">品牌头条</span></td>
+							<td><span class="facespan2">发现好货</span></td>
+							<td><span class="facespan2">京东预售</span></td>
+							<td><span class="facespan2">京东金融</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">京东试用</span></td>
+							<td><span class="facespan2">港澳售</span></td>
+							<td><span class="facespan2">优惠券</span></td>
+							<td><span class="facespan2">闪购</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">京东会员</span></td>
+							<td><span class="facespan2">秒杀</span></td>
+							<td><span class="facespan2">定期送</span></td>
+							<td><span class="facespan2">装机大师</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">新奇特</span></td>
+							<td><span class="facespan2">企业金融服务</span></td>
+							<td><span class="facespan2">礼品购</span></td>
+							<td><span class="facespan2">智能馆</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">0元评测</span></td>
+							<td><span class="facespan2">In货推荐</span></td>
+							<td><span class="facespan2">北京老字号</span></td>
+							<td><span class="facespan2">买什么</span></td>
+						</tr>
+						<!--<tr>
+							<td><span class="facespan"></span></td>
+							<td><span class="facespan"></span></td>
+							<td><span class="facespan"></span></td>
+							<td><span class="facespan"></span></td>
+						</tr>-->
+					</table>
+				</div>
+				<div id="daohang2">
+					<table>
+						<tr>
+							<td><span class="daohang_td">行业频道</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">服装城</span></td>
+							<td><span class="facespan2">家用电器</span></td>
+							<td><span class="facespan2">电脑办公</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">手机</span></td>
+							<td><span class="facespan2">美妆馆</span></td>
+							<td><span class="facespan2">食品</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">智能数码</span></td>
+							<td><span class="facespan2">母婴</span></td>
+							<td><span class="facespan2">家装城</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">运动户外</span></td>
+							<td><span class="facespan2">整车</span></td>
+							<td><span class="facespan2">图书</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">农资频道</span></td>
+							<td><span class="facespan2">京东智能</span></td>
+							<td><span class="facespan2">玩3C</span></td>
+						</tr>
+					</table>
+				</div>
+				<div id="daohang3">
+					<table>
+						<tr>
+							<td><span class="daohang_td">生活服务</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">京东众筹</span></td>
+							<td><span class="facespan2">白条</span></td>
+							<td><span class="facespan2">京东金融App</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">京东小金库</span></td>
+							<td><span class="facespan2">理财</span></td>
+							<td><span class="facespan2">话费</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">旅行</span></td>
+							<td><span class="facespan2">彩票</span></td>
+							<td><span class="facespan2">游戏</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">机票酒店</span></td>
+							<td><span class="facespan2">电影票</span></td>
+							<td><span class="facespan2">水电煤</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">京东到家</span></td>
+							<td><span class="facespan2">京东微联</span></td>
+							<td><span class="facespan2">京东众测</span></td>
+						</tr>
+					</table>
+				</div>
+				<div id="daohang4">
+					<table>
+						<tr>
+							<td><span class="daohang_td">更多精选</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">京东社区</span></td>
+							<td><span class="facespan2">京东通信</span></td>
+							<td><span class="facespan2">在线读书</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">京东E卡</span></td>
+							<td><span class="facespan2">智能社区</span></td>
+							<td><span class="facespan2">游戏社区</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">京友邦</span></td>
+							<td><span class="facespan2">合作招商</span></td>
+							<td><span class="facespan2">企业采购</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">服务市场</span></td>
+							<td><span class="facespan2">乡村招募</span></td>
+							<td><span class="facespan2">校园加盟</span></td>
+						</tr>
+						<tr>
+							<td><span class="facespan2">办公生活馆</span></td>
+							<td><span class="facespan2">知识产权维权</span></td>
+							<td><span class="facespan2">English Site</span></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div id="faceaside">
+				<img src="img/京东logo.gif" alt="" />
+				<div id="fenlei">
+					<ul>
+						<li><span>家用电器</span></li>
+						<li><span>手机</span>/<span>运营商</span>/<span>数码</span></li>
+						<li><span>电脑</span>/<span>办公</span></li>
+						<li><span>家居</span>/<span>家具</span>/<span>家装</span>/<span>厨具</span></li>
+						<li><span>男装</span>/<span>女装</span>/<span>童装</span>/<span>内衣</span></li>
+						<li><span>美妆个护</span>/<span>宠物</span></li>
+						<li><span>女鞋</span>/<span>箱包</span>/<span>钟表</span>/<span>珠宝</span></li>
+						<li><span>男鞋</span>/<span>运动</span>/<span>户外</span></li>
+						<li><span>汽车</span>/<span>汽车用品</span></li>
+						<li><span>母婴</span>/<span>玩具乐器</span></li>
+						<li><span>食品</span>/<span>酒类</span>/<span>生鲜</span>/<span>特产</span></li>
+						<li><span>医药保健</span>/<span>计生情趣</span></li>
+						<li><span>图书</span>/<span>音像</span>/<span>电子书</span></li>
+						<li><span>机票</span>/<span>酒店</span>/<span>旅游</span>/<span>生活</span></li>
+						<li><span>理财</span>/<span>众筹</span>/<span>白条</span>/<span>保险</span></li>	
+					</ul>						
+				</div>				
+			</div>
+			<div id="sousuo">
+				<div id="ss1">
+					<div id="blank3"></div>
+					<div id="ssk">
+						<input type="text" id="kk1" value=""/><input type="submit" name="" id="kk2" value="" />						
+					</div>
+					<div id="blank4"></div>
+					<div id="gouwulan">我的购物车</div>
+				</div>
+				<div id="ss2">
+					<div id="blank5"></div>
+					<div id="anshi">
+						<span class="tishi" id="anshi1">立减1200</span>
+						<span class="tishi">9.9包邮</span>
+						<span class="tishi">买一送一</span>
+						<span class="tishi">儿童凉鞋</span>
+						<span class="tishi">价保618</span>
+						<span class="tishi">马丁鞋男</span>
+						<span class="tishi">加绒卫衣女</span>
+						<span class="tishi">199减100</span>
+						<span class="tishi">冲锋衣男</span>	
+					</div>					
+				</div>
+				<div id="ss3">
+					<div id="dibu1">
+						<span class="dbspan">秒杀</span>
+						<span class="dbspan">优惠券</span>
+						<span class="dbspan">闪购</span>
+						<span class="dbspan" class="dibukk">拍卖</span>
+					</div>
+					<div id="dibu2">
+						<span class="dbspan">服装城</span>
+						<span class="dbspan">京东超市</span>
+						<span class="dbspan">生鲜</span>
+						<span class="dbspan">全球购</span>
+					</div>
+					<div id="dibu3">
+						<span class="dbspan">京东金融</span>
+					</div>
+				</div>
+			</div>
+			<div id="erweima"></div>
+			<div id="bigimgs">
+				<div id="lunbotu">
+						<img src="img/1轮播图.jpg" alt="" style="display: block;"/>
+						<img src="img/2轮播图.jpg" alt="" />
+						<img src="img/3轮播图.jpg" alt="" />
+						<img src="img/4轮播图.jpg" alt="" />
+						<img src="img/5轮播图.jpg" alt="" />
+						<img src="img/6轮播图.jpg" alt="" />
+						<img src="img/7轮播图.jpg" alt="" />
+						<img src="img/8轮播图.jpg" alt="" />
+						<ul>
+							<li style="background:#db192a;"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+				</div>
+				<div id="bigimg1"></div>
+				<div id="bigimg2"></div>
+			</div>
+			<div id="faceaside2">
+				<div id="geren">
+					<!--<div id="gerennei">-->
+						<div id="gerentop">
+							<div id="touxiang"></div>
+							<p>Hi，欢迎来到京…</p>
+							<span id="gerendl">登陆</span><span id="gerenzc">注册</span>
+						</div>
+						<div id="gerenbottom">
+							<div id="fuli">新人福利</div>
+							<div id="huiyuan">PLUS会员</div>	
+						</div>	
+					<!--</div>-->
+					
+					
+				</div>
+				<div id="xinxi">
+					<div id="xinxitop" style="color: #333;">
+						<div id="cxgg">
+							<ul>
+								<li>促销</li>
+								<li>公告</li>
+							</ul>
+						</div>
+						<div id="gengduo">
+							更多
+						</div>	
+					</div>
+					<div id="xinxibottom">
+						<div style="display: block;">
+							<table id="cuxiao">
+								<tr><td>端午粽情，精选礼盒</td></tr>
+								<tr><td>春季拍卖会 1元起拍</td></tr>
+								<tr><td>童装童鞋跨店3免1！</td></tr>
+								<tr><td>玩具超极品类日满199减100</td></tr>
+							</table>	
+						</div>
+						<div style="display: none;">
+							<table id="gonggao">
+								<tr><td>VERTIU官方旗舰店入驻京东</td></tr>
+								<tr><td>ZENITH真力时入驻京东</td></tr>
+								<tr><td>"4.28配送员日"2000名五…</td></tr>
+								<tr><td>京东热水器品类安装收费封顶</td></tr>
+							</table>	
+						</div>
+						
+					</div>
+				</div>
+				<div id="kuaijie">
+					<table id="kjtable">
+						<tr>
+							<td calss="td1">话费</td>
+							<td calss="td1">机票</td>
+							<td calss="td1">酒店</td>
+							<td calss="td2">游戏</td>
+						</tr>
+						<tr>
+							<td calss="td1">企业购</td>
+							<td calss="td1">加油卡</td>
+							<td calss="td1">电影票</td>
+							<td calss="td2">火车票</td>
+						</tr>
+						<tr>
+							<td calss="td1">众筹</td>
+							<td calss="td1">理财</td>
+							<td calss="td1">礼品卡</td>
+							<td calss="td2">白条</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="main1">
+			<div id="main1top">
+				<div id="miaoshatitle">
+					<p id="miaoshaleft1">京东秒杀</p><p id="miaoshaleft2" class="shouzhi">总有你想不到的低价</p>
+				</div>
+				<div id="miaoshalb">
+					<div id="lb1">
+						<div class="kk">
+							<div class="kkimg">
+								<img src="img/联想.jpg" alt="" class="kkimgs"/>
+							</div>
+							<div class="kkimgp">
+								<p class="kkp1">
+									联想(Lenovo)拯救者R720 15.6英寸游戏笔记本电脑(i5-7300H
+								</p>
+								<p class="kkp2"><span class="kkp2yanse"><span class="kkp2qian">￥</span>5798.00</span>&nbsp;<span class="kkp2qian">￥</span><span class="kkp2jiu">6999.00</span></p>
+							</div>
+						</div>
+						<div class="kk">
+							<div class="kkimg">
+								<img src="img/香满园.jpg" alt="" class="kkimgs"/>
+							</div>
+							<div class="kkimgp">
+								<p class="kkp1">
+									【京东超市】香满园 食用油 花生香型使用调和油4L
+								</p>
+								<p class="kkp2"><span class="kkp2yanse"><span class="kkp2qian">￥</span>29.70</span>&nbsp;<span class="kkp2qian">￥</span><span class="kkp2jiu">49.90</span></p>
+							</div>
+						</div>
+						<div class="kk">
+							<div class="kkimg">
+								<img src="img/美的.jpg" alt="" class="kkimgs"/>
+							</div>
+							<div class="kkimgp">
+								<p class="kkp1">
+									美的(Midea)12升变升恒温 6年质保 防烫温控 燃气热水器
+								</p>
+								<p class="kkp2"><span class="kkp2yanse"><span class="kkp2qian">￥</span>1399.00</span>&nbsp;<span class="kkp2qian">￥</span><span class="kkp2jiu">1799.00</span></p>
+							</div>
+						</div>
+						<div class="kk">
+							<div class="kkimg">
+								<img src="img/格力.jpg" alt="" class="kkimgs"/>
+							</div>
+							<div class="kkimgp">
+								<p class="kkp1">
+									格力 GREE 3匹 定频冷暖 京炫立柜式空调 白色 KFR-72LW
+								</p>
+								<p class="kkp2"><span class="kkp2yanse"><span class="kkp2qian">￥</span>6339.00</span>&nbsp;<span class="kkp2qian">￥</span><span class="kkp2jiu">6599.00</span></p>
+							</div>
+						</div>
+						<div class="kk">
+							<div class="kkimg">
+								<img src="img/小龙虾.jpg" alt="" class="kkimgs"/>
+							</div>
+							<div class="kkimgp">
+								<p class="kkp1">
+									红工夫 熟冻麻辣小龙虾 25-32只 4-6钱/只 1.5kg(净虾重750
+								</p>
+								<p class="kkp2"><span class="kkp2yanse"><span class="kkp2qian">￥</span>59.90</span>&nbsp;<span class="kkp2qian">￥</span><span class="kkp2jiu">138.00</span></p>
+							</div>
+						</div>
+					</div>
+					<div id="lb2" class="shouzhi"></div>
+				</div>
+			</div>
+			<div id="main1face">
+				<div id="haohuo">
+					<div class="main1facet" id="haohuot">
+						<p class="main1faceleft">发现好货</p>
+						<p class="main1faceright shouzhi">发现品质生活</p>
+					</div>
+					<div id="haohuoneirong">
+						<table>
+							<tr>
+								<td class="hhtd">
+									<p class="hhp">Beats 入耳式耳机</p>
+									<div id="hhimg" class="hhimg">
+										<img src="img/11112.jpg" alt="" />
+									</div>
+								</td>
+								<td class="hhtd">
+									<p class="hhp">策恩手工牛皮休闲鞋</p>
+									<div id="hhimg" class="hhimg">	
+										<img src="img/11111.jpg" alt="" />
+									</div>
+								</td class="hhtd">
+							</tr>
+							<tr>
+								<td class="hhtd">
+									<p class="hhp">Bose妙韵音乐系统音响</p>
+									<div id="hhimg" class="hhimg">
+										<img src="img/11116.jpg" alt="" />
+									</div>
+								</td>
+								<td class="hhtd">
+									<p class="hhp">奥芙俪蕾丝透视连衣裙</p>
+									<div id="hhimg" class="hhimg">	
+										<img src="img/11115.jpg" alt="" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="hhtd">
+									<p class="hhp">爱可优 迷宫智慧球</p>
+									<div id="hhimg" class="hhimg">	
+										<img src="img/11114.jpg" alt="" />
+									</div>
+								</td>
+								<td class="hhtd">
+									<p class="hhp">洛诗琳 丝绒系带衬衫</p>
+									<div id="hhimg" class="hhimg">	
+										<img src="img/11113.jpg" alt="" />
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="youpin">
+					<div class="main1facet" id="youpint">
+						<p class="main1faceleft">优品专辑</p>
+						<p class="main1faceright shouzhi">甄选优质好物</p>
+					</div>
+					<div id="youpinneirong">
+						<img src="img/中间轮播图1.png" alt="" style="display: block;"/>
+						<img src="img/中间轮播图2.png" alt="" />
+						<img src="img/中间轮播图3.png" alt="" />		
+						<ul>
+							<li style="background: #db192a;"></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div id="zhuanji">
+					<div class="main1facet" id="zhuanjit">
+						<p class="main1faceleft">排行榜</p>
+						<p class="main1faceright shouzhi">专属你的购物指南</p>
+					</div>
+					<div id="zhuanjinav">
+						<ul>
+							<li>手机通讯</li>
+							<li>创意礼品</li>
+							<li>生活电器</li>
+							<li>坚果炒货</li>
+							<li>户外风衣</li>
+						</ul>						
+					</div>
+					<div id="zhuanjiimgs">
+						<div id="zhuanjiimgs_imgs" class="shouzhi">
+							<img src="img/第一张.png" alt="" style="display: block;"/>
+							<img src="img/第二张.png" alt="" />
+							<img src="img/第三张.png" alt="" />
+							<img src="img/第四章.png" alt="" />
+							<img src="img/第五章.png" alt="" />	
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div id="main1bottom" class="shouzhi">
+				<div id="lingquan">
+					<img src="img/领券红.png" alt="" />
+				</div>
+				<div id="quanlb">
+					<div id="quan1" class="quan">
+						<div id="quan1p" class="quanp">
+							<p class="p1"><span style="font-size: 12px;font-weight: normal;">￥</span>100</p>
+							<p class="p2">仅可购买荣耀指定产品</p>
+							<p class="p3">消费满500元可用</p>
+							<p class="p4">更多好券</p>
+						</div>
+						<div id="quan1img" class="quanimg">
+							<img src="img/荣耀.jpg" alt="" class="qimg"/>
+						</div>
+					</div>
+					<div id="quan2" class="quan">
+						<div id="quan2p" class="quanp">
+							<p class="p1"><span style="font-size: 12px;font-weight: normal;">￥</span>60</p>
+							<p class="p2">仅可购买自营飞亚达卓雅系列腕</p>
+							<p class="p3">消费满61元可用&nbsp;&nbsp;&nbsp;</p>
+							<p class="p4">更多服饰箱包券</p>
+						</div>
+						<div id="quan2img" class="quanimg">
+							<img src="img/手表.jpg" alt="" class="qimg"/>
+						</div>
+					</div>	
+					<div id="quan3" class="quan">
+						<div id="quan3p" class="quanp">
+							<p class="p1"><span style="font-size: 12px;font-weight: normal;">￥</span>1200</p>
+							<p class="p2">仅可购买全球购商品</p>
+							<p class="p3">消费满1499元可用</p>
+							<p class="p4">更多个护母婴券</p>
+						</div>
+						<div id="quan3img" class="quanimg">
+							<img src="img/全球购.jpg" alt="" class="qimg"/>
+						</div>
+					</div>
+					<div id="quan4" class="quan">
+						<div id="quan4p" class="quanp">
+							<p class="p1"><span style="font-size: 12px;font-weight: normal;">￥</span>238</p>
+							<p class="p2">仅可购买卢正浩指定商品</p>
+							<p class="p3">消费满239元可用</p>
+							<p class="p4">更多食品饮料券</p>
+						</div>
+						<div id="quan4img" class="quanimg">
+							<img src="img/卢正浩.jpg" alt="" class="qimg"/>
+						</div>
+					</div>
+					<div id="quan5" class="quan">
+						<div id="quan5p" class="quanp">
+							<p class="p1"><span style="font-size: 12px;font-weight: normal;">￥</span>700</p>
+							<p class="p2">仅可购买HTC U Ultra 系列 初绽</p>
+							<p class="p3">消费满5088元可用</p>
+							<p class="p4">更多数码家电券</p>
+						</div>
+						<div id="quan5img" class="quanimg">
+							<img src="img/HTC.jpg" alt="" class="qimg"/>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div id="main1footer">
+			<div id="footerimgs">
+				<img src="img/底部1.jpg" alt="" />
+				<img src="img/底部2.jpg" alt="" />
+				<img src="img/底部3.jpg" alt="" />
+			</div>
+		</div>
+	</body>
+</html>
